@@ -28,14 +28,18 @@
       <h2 class="tag">Share with <em>#message4Ukraine</em></h2>
     </div>
     <div class="info">
-      <p>Git Repository: <a href=""></a></p>
       <p>
         Author:
-        <a href="https://www.codeninth.com" target="_blank"
-          >Hiroyuki Takakura</a
+        <a href="https://www.codeninth.com">Hiroyuki Takakura</a>
+      </p>
+      <p>
+        <a
+          href="https://github.com/HiroyukiTakakura/message4ukraine"
+          rel="nofollow"
+          >GitHub</a
         >
       </p>
-      <p><a href="https://twitter.com/ongaqJSws" target="_blank">Twitter</a></p>
+      <p><a href="https://twitter.com/ongaqJSws">Twitter</a></p>
     </div>
   </div>
 </template>
@@ -129,8 +133,8 @@ export default {
 
       x.fillStyle = "#000";
       x.globalAlpha = 0.8;
-      x.font = "30px 'Patrick Hand', cursive";
-      x.fillText("message4ukraine.com", 550, h - 30);
+      x.font = "34px 'Patrick Hand', cursive";
+      x.fillText("message4ukraine.com", 510, h - 30);
 
       x.globalAlpha = 1;
       if (this.$data.message) {
