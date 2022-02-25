@@ -7,12 +7,7 @@ export default {
     host: '0.0.0.0'
   },
   generate: {
-    fallback: 'index.html',
-    routes(){
-      return [
-        `dummy`
-      ]
-    }
+    fallback: 'index.html'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
