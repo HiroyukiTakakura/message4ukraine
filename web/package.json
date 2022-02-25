@@ -1,0 +1,23 @@
+{
+  "name": "voice_for_ukraine",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "stylus": "^0.55.0",
+    "stylus-loader": "3"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0"
+  }
+}
