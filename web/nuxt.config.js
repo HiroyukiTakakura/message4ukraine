@@ -23,6 +23,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'og:url', content: 'https://message4ukraine.com/' },
       { name: 'og:title', content: 'Create message card for Ukraine' },
+      { name: 'og:image', content: 'https://message4ukraine.com/og-image.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
