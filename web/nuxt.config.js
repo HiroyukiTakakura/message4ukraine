@@ -12,15 +12,17 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Voice for Ukraine",
+    title: "Create message card for Ukraine",
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Create message card for Ukraine.' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'og:url', content: 'https://message4ukraine.com/' },
+      { name: 'og:title', content: 'Create message card for Ukraine' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

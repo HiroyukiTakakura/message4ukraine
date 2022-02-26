@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h1 class="title">🇺🇦 Message for Ukraine 🇺🇦</h1>
+    <h1 class="title">🇺🇦 Create message card for Ukraine 🇺🇦</h1>
     <section class="input">
       <textarea
         class="textarea"
@@ -14,14 +14,13 @@
       <div class="count">{{ message.length }} / {{ maxLength }}</div>
     </section>
     <section class="output">
-      <a @click="download">
-        <canvas
-          ref="canvas"
-          width="800"
-          height="800"
-          class="canvas"
-          v-if="canvasRendered"
-      /></a>
+      <canvas
+        ref="canvas"
+        width="800"
+        height="800"
+        class="canvas"
+        v-if="canvasRendered"
+      />
     </section>
     <div class="bottom">
       <a class="button" @click="download">Save Image</a>
@@ -29,18 +28,20 @@
     </div>
     <div class="info">
       <p>
-        Author:
-        <a href="https://www.codeninth.com">Hiroyuki Takakura</a>
-      </p>
-      <p>
+        <a class="info-link" href="https://www.codeninth.com">Author</a>
         <a
+          class="info-link"
           href="https://github.com/HiroyukiTakakura/message4ukraine"
           rel="nofollow"
           >GitHub</a
         >
+        <a class="info-link" href="https://twitter.com/ongaqJSws">Twitter</a>
       </p>
-      <p><a href="https://twitter.com/ongaqJSws">Twitter</a></p>
     </div>
+    <aside class="notion">
+      This site is collecting user activities with Google Analytics for
+      improvement. Naturally, they will never shared with specific country.
+    </aside>
   </div>
 </template>
 
@@ -132,9 +133,9 @@ export default {
       x.fill();
 
       x.fillStyle = "#000";
-      x.globalAlpha = 0.8;
-      x.font = "34px 'Patrick Hand', cursive";
-      x.fillText("message4ukraine.com", 510, h - 30);
+      x.globalAlpha = 0.64;
+      x.font = "52px 'Patrick Hand', cursive";
+      x.fillText("message4ukraine.com", 360, h - 30);
 
       x.globalAlpha = 1;
       if (this.$data.message) {
@@ -233,4 +234,15 @@ export default {
   padding-top 20px
   border-top 1px solid #aaa
   margin-top 30px
+.info-link
+  display inline-block
+  &+&
+    margin-left 10px
+.notion
+  background #f2f2f2
+  color #888
+  font-size 12px
+  text-align center
+  padding 5px 10px
+  border-radius 3px
 </style>
